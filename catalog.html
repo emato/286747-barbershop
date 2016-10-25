@@ -7,6 +7,7 @@
   </head>
 
   <body>
+
     <header class="main-header">
       <div class="container">
         <div class="header-logo">
@@ -14,140 +15,148 @@
         </div>
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Прайс-лист</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <div class="user-block">
           <a href="#">Вход<a>
         </div>
-      <div>
+      </div>
     </header>
 
     <main class="container">
-      <b class="main-header">Средства для ухода</b>
+
+      <h1>Средства для ухода</h1>
       <div class="breadcrumbs">
         <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Средства для ухода</a>
-          </li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <!--  3.3 В блоке с хлебными крошками активная страница (последний
+          пункт) не является ссылкой и не реагирует на наведение.-->
+          <li>Средства для ухода</li>
         </ul>
       </div>
-      <div class="sidemenu">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <b class="sub-header">Производители</b><br>
-          <input type="checkbox" name="BOC" checked>
-          <label for="BOC">Baxter of California</label><br>
-          <input type="checkbox" name="MrNatty">
-          <label for="MrNatty">Mr Natty</label><br>
-          <input type="checkbox" name="Suavecito" checked>
-          <label for="Suavecito">Suavecito</label><br>
-          <input type="checkbox" name="Malin+Goets">
-          <label for="Malin+Goets">Malin+Goets</label><br>
-          <input type="checkbox" name="Murray's">
-          <label for="Murray's">Murray's</label><br>
-          <input type="checkbox" name="American crew" checked>
-          <label for="American crew">American crew</label><br>
-          <b class="sub-header">Группы товаров</b><br>
-          <label>
-            <input type="radio" name="groups" value="tools">
-            Бритвенные принадлежности
-          </label><br>
-          <label>
-            <input type="radio" name="groups" value="care" checked>
-            Средства для ухода
-          </label><br>
-          <label>
-            <input type="radio" name="groups" value="accessories">
-            Аксессуары
-          </label>
-          <button class="btn submit" type="submit">Показать</button>
+
+      <div class="catalog-page">
+        <form class="sidemenu" action="https://echo.htmlacademy.ru" method="post">
+          <h2>Производители</h2>
+          <p><label><input type="checkbox" name="BOC" checked>Baxter of California</label></p>
+          <p><label><input type="checkbox" name="MrNatty">Mr Natty</label></p>
+          <p><label><input type="checkbox" name="Suavecito" checked>Suavecito</label></p>
+          <p><label><input type="checkbox" name="Malin+Goets">Malin+Goets</label></p>
+          <p><label><input type="checkbox" name="Murray's">Murray's">Murray's</label></p>
+          <p><label><input type="checkbox" name="American crew" checked>American crew</label></p>
+          <h2>Группы товаров</h2>
+          <p><label><input type="radio" name="groups" value="tools">Бритвенные принадлежности</label></p>
+          <p><label><input type="radio" name="groups" value="care" checked>Средства для ухода</label></p>
+          <p><label><input type="radio" name="groups" value="accessories">Аксессуары</label></p>
+          <p><button class="btn submit" type="submit">Показать</button></p>
         </form>
-      </div>
-      <div class="items">
-        <article class="item">
-          <img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара" name="item1">
-          <label for="item1">Набор для путешествий "Baxter of California"</label>
-          <div class="container">
-            <div class="price">
+
+        <!--
+        3.13 Карточка товара: изображение товара — это ссылка на страницу товара.
+        3.14 Карточка товара: название товара — это ссылка на страницу товара (название состоит из двух строк, но по сути является одним блоком).
+        3.15 Карточка товара: кнопка «Купить» — по клику товар добавляется в корзину (макета корзины нет, не делать).
+        -->
+        <div class="items">
+
+          <article class="item">
+            <a href="#"><img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара"></a>
+            <a href="#">Набор для путешествий "Baxter of California"</a>
+            <div class="container price">
               <p>2900 руб.</p>
+              <button type="button">Купить</button>
             </div>
-            <a href="#" class="btn">Купить</a>
-          </div>
-        </article>
-        <article class="item">
-          <img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара" name="item2">
-          <label for="item2">Увлажняющий кондиционер "Baxter of California"</label>
-          <div class="container">
-            <div class="price">
+          </article>
+
+          <article class="item">
+            <a href="#"><img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара"></a>
+            <a href="#">Увлажняющий кондиционер "Baxter of California"</a>
+            <div class="container price">
               <p>750 руб.</p>
+              <button type="button">Купить</button>
             </div>
-            <a href="#" class="btn">Купить</a>
-          </div>
-        </article>
-        <article class="item">
-          <img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара" name="item3">
-          <label for="item3">Гель для волос "Suavecito""</label>
-          <div class="container">
-            <div class="price">
+          </article>
+
+          <article class="item">
+            <a href="#"><img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара"></a>
+            <a href="#">Гель для волос "Suavecito""</a>
+            <div class="container price">
               <p>290 руб.</p>
+              <button type="button">Купить</button>
             </div>
-            <a href="#" class="btn">Купить</a>
-          </div>
-        </article>
-        <article class="item">
-          <img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара" name="item4">
-          <label for="item4">Гель для укладки волос "American crew"</label>
-          <div class="container">
-            <div class="price">
+          </article>
+
+          <article class="item">
+            <a href="#"><img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара"></a>
+            <a href="#">Гель для укладки волос "American crew"</a>
+            <div class="container price">
               <p>500 руб.</p>
+              <button type="button">Купить</button>
             </div>
-            <a href="#" class="btn">Купить</a>
-          </div>
-        </article>
-        <article class="item">
-          <img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара" name="item5">
-          <label for="item5">Гель для волос "American crew"</label>
-          <div class="container">
-            <div class="price">
+          </article>
+
+          <article class="item">
+            <a href="#"><img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара"></a>
+            <a href="#">Гель для волос "American crew"</a>
+            <div class="container price">
               <p>300 руб.</p>
+              <button type="button">Купить</button>
             </div>
-            <a href="#" class="btn">Купить</a>
-          </div>
-        </article>
-        <article class="item">
-          <img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара" name="item6">
-          <label for="item6">Набор для бритья "Baxter of california"</label>
-          <div class="container">
-            <div class="price">
+          </article>
+
+          <article class="item">
+            <a href="#"><img src="http://placehold.it/100" width="100" height="100" alt="Изображение товара"></a>
+            <a href="#">Набор для бритья "Baxter of california"</a>
+            <div class="container price">
               <p>3900 руб.</p>
+              <button type="button">Купить</button>
             </div>
-            <a href="#" class="btn">Купить</a>
-          </div>
-        </article>
-        <a href="#" class="pageNumber">1</a>
-        <a href="#" class="pageNumber">2</a>
-        <a href="#" class="pageNumber">3</a>
-        <a href="#" class="pageNumber">4</a>
+          </article>
+        </div>
+
+        <!--  3.4 В пагинации активная страница не является ссылкой и не реагирует на наведение. -->
+        <ul class="page-selector">
+          <li><a href="#" class="page-number">1</a></li>
+          <li><p class="page-number">2</p></li>
+          <li><a href="#" class="page-number">3</a></li>
+          <li><a href="#" class="page-number">4</a></li>
+        </ul>
+      </div>
+
     </main>
+
+    <footer class="main-footer">
+
+      <div class="container">
+
+        <section class="footer-contact">
+          <p>Барбершоп "Бородински"</p>
+          <p>Адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</p>
+          <a href="#">Как нас найти?</a>
+          <p>Телефон: +7(495)666-02-66</p>
+        </section>
+
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <ul>
+            <li><a class="scl-btn scl-btn-vk" href="#">Вконтакте</a></li>
+            <li><a class="scl-btn scl-btn-fb" href="#">Фейсбук</a></li>
+            <li><a class="scl-btn scl-btn-inst" href="#">Инстаграмм</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <p><a class="btn" href="#">htmlacademy.ru</a><p>
+        </section>
+
+      </div>
+    </footer>
+
   </body>
 </html>

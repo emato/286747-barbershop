@@ -7,6 +7,7 @@
   </head>
 
   <body>
+
     <header class="main-header">
       <div class="container">
         <div class="header-logo">
@@ -14,21 +15,11 @@
         </div>
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Новости</a>
-            </li>
-            <li>
-              <a href="#">Прайс-лист</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <div class="user-block">
@@ -38,84 +29,87 @@
     </header>
 
     <main class="container">
-      <b class="main-header">Набор для путешествий "Baxter of California"</b>
+      <h1>Набор для путешествий "Baxter of California"</h1>
+
       <div class="breadcrumbs">
         <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Средства для ухода</a>
-          </li>
-          <li>
-            <a href="#">Набор для путешествий "Baxter of California"</a>
-          </li>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Средства для ухода</a></li>
+          <li>Набор для путешествий "Baxter of California"</li>
         </ul>
       </div>
-      <div class="container item-gallery">
-        <img src="http://placehold.it/100" width="100" height="100" alt="Набор  для путешествий">
-        <div class="container">
-          <a class="item-pcs" href="#">Первая превьюшка</a>
-          <a class="item-pcs" href="#">Вторая превьюшка</a>
-          <a class="item-pcs" href="#">Третья превьюшка</a>
-        </div>
-      </div>
+
       <div class="container">
-        <div class="storage-info">
-          <div>Есть в наличии</div>
-          <div class="lot">Артикул: DEXTER-AE</div>
+
+        <div class="container item-gallery">
+          <!-- 3.17 При клике по миниатюре в галерее изображений большая фотография меняться не должна. -->
+          <img src="http://placehold.it/100" width="100" height="100" alt="Набор  для путешествий">
+          <div class="container">
+            <img src="http://placehold.it/100" width="100" height="100" alt="Первая превьюшка">
+            <img src="http://placehold.it/100" width="100" height="100" alt="Вторая превьюшка">
+            <img src="http://placehold.it/100" width="100" height="100" alt="Третья превьюшка">
+          </div>
         </div>
-        <p>Travel kit - неободимый аксессуар во время любого путешествия. В
-           аккуратной кожаной сумке находится все, что нужно для бритья и ухода за
-           кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий
-           крем, крем для бритья, крем после бритья, шампунь, набор также может
-           стать отличным подарком.</p>
+
         <div class="container">
-          <div class="price">2900 руб.</div>
-          <a href="#">Купить</a>
+
+          <div class="storage-info">
+            <p>Есть в наличии</p>
+            <p class="lot">Артикул: DEXTER-AE</p>
+          </div>
+
+          <p>Travel kit - неободимый аксессуар во время любого путешествия. В
+             аккуратной кожаной сумке находится все, что нужно для бритья и ухода за
+             кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий
+             крем, крем для бритья, крем после бритья, шампунь, набор также может
+             стать отличным подарком.</p>
+          <div class="container price">
+            <p>2900 руб.</p>
+            <button type="button">Купить</button>
+          </div>
+
+          <h2>В набор входят:</h2>
+          <ul class="equipment">
+            <li>Средство для умывания(50 мл)</li>
+            <li>Увлажняющий крем</li>
+            <li>Крем для бритья(50 мл)</li>
+            <li>Крем после бритья, шампунь(50 мл)</li>
+            <li>Удобная кожаная косметичка</li>
+          </ul>
+
         </div>
-        <b class="sub-header">В набор входят:</b>
-        <ul>
-          <li>
-            Средство для умывания(50 мл)
-          </li>
-          <li>
-            Увлажняющий крем
-          </li>
-          <li>
-            Крем для бритья(50 мл)
-          </li>
-          <li>
-            Крем после бритья, шампунь(50 мл)
-          </li>
-          <li>
-            Удобная кожаная косметичка
-          </li>
+
       </div>
     </main>
 
     <footer class="main-footer">
+
       <div class="container">
+
         <section class="footer-contact">
-          Барбершоп "Бородински"<br>
-          Адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7(495)666-02-66
+          <p>Барбершоп "Бородински"</p>
+          <p>Адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</p>
+          <a href="#">Как нас найти?</a>
+          <p>Телефон: +7(495)666-02-66</p>
         </section>
+
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="scl-btn scl-btn-vk" href="#">Вконтакте</a>
-          <a class="scl-btn scl-btn-fb" href="#">Фейсбук</a>
-          <a class="scl-btn scl-btn-inst" href="#">Инстаграмм</a>
+          <ul>
+            <li><a class="scl-btn scl-btn-vk" href="#">Вконтакте</a></li>
+            <li><a class="scl-btn scl-btn-fb" href="#">Фейсбук</a></li>
+            <li><a class="scl-btn scl-btn-inst" href="#">Инстаграмм</a></li>
+          </ul>
         </section>
+
         <section class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn" href="#">htmlacademy.ru</a>
+          <p><a class="btn" href="#">htmlacademy.ru</a><p>
         </section>
+
       </div>
     </footer>
+
   </body>
 </html>
