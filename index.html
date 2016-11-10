@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  
+  <body class="index-body">
 
     <header class="main-header">
       <div class="container clearfix">
@@ -62,9 +65,9 @@
           <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery-content">
-              <img src="img/index-gallery-saloon.jpg" width="286" height="164" alt="">
+              <img src="img/index-gallery-saloon.jpg" width="286" height="164" alt="Внутри барбершопа">
             </figure>
-            <button class="btn gallery-prev" type="button">Назад</button>
+            <button class="btn disabled gallery-prev" type="button">Назад</button>
             <button class="btn gallery-next" type="button">Вперёд</button>
           </div>
         </div>
@@ -100,23 +103,18 @@
     </main>
 
     <footer class="main-footer">
-
       <div class="container clearfix">
-
         <section class="footer-contacts">
-          <p>Барбершоп "Бородински"</p>
-          <p>Адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</p>
-          <a href="#">Как нас найти?</a>
-          <p>Телефон: +7(495)666-02-66</p>
+          Барбершоп "Бородински"<br>
+          Адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7(495)666-02-66
         </section>
-
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <ul>
-            <li><a class="scl-btn scl-btn-vk" href="#">Вконтакте</a></li>
-            <li><a class="scl-btn scl-btn-fb" href="#">Фейсбук</a></li>
-            <li><a class="scl-btn scl-btn-inst" href="#">Инстаграмм</a></li>
-          </ul>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
         </section>
 
         <section class="footer-copyright">
