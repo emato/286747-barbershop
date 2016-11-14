@@ -37,7 +37,20 @@ body{
 }
 .main-navigation{
   float:left;
-  width: 544px;
+  width: 700px;
+}
+.main-navigation .logo-inner{
+  float:left;
+  width: 113;
+  height:21px;
+  padding-top: 24px;
+}
+.logo-inner img{
+  width: 113px;
+  height: 24px;
+}
+.main-navigation .logo-inner:hover{
+  background: none;
 }
 .main-navigation ul{
   margin: 0;
@@ -51,7 +64,6 @@ body{
 
   font-size: 16px;
   line-height: 20px;
-  vertical-align: top;
 }
 .main-navigation a{
   display:block;
@@ -98,15 +110,6 @@ body{
 }
 .login:hover::before{
   opacity: 1;
-}
-.header-logo{
-  float:left;
-  width:150px;
-  height: 70px;
-
-  vertical-align: top;
-
-  background: #000000 url("../img/header-logo.png") no-repeat center;
 }
 /*Конец разметки хедера*/
 /*Разметка содержимого главной страницы из презентации*/
@@ -279,8 +282,10 @@ body{
   clear:both;
   width: 100%;
 }
-.appointment-form input:focus{
+.appointment-form input:focus,
+.appointment-form input:hover{
   border: 2px solid #663d15;
+  outline: none;
 }
 .index-content-left{
   float:left;
@@ -380,26 +385,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Разметка основного блока магазина*/
 h1{
   font-size: 32px;
@@ -453,6 +438,13 @@ h2{
   padding: 0;
 
   width: 220px;
+}
+.catalog-sidemenu label{
+  display: block;
+  padding-bottom: 14px;
+}
+.catalog-sidemenu label:hover{
+  color: #663d15;
 }
 .items{
   float:right;
@@ -515,8 +507,10 @@ h2{
   padding: 10px 20px;
 }
 .page-selector span{
+
   color: #000000;
   background-color: #ffffff;
+  cursor: default;
 }
 .page-selector span:hover{
   background-color: #ffffff;
